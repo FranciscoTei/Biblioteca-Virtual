@@ -1,0 +1,3 @@
+B10012024 Francisco 25/05/1997 Brasileira peto@gmail.com senha123 19/08/2024 bibliotecario
+U10012024 Chico 25/05/1997 Brasileira peto@gmail.com senha123 19/08/2024 usuario
+U10022024 peto 22/22/2222 Martinense peto@gm.com 12345 usuario 

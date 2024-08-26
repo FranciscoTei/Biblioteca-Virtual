@@ -1,0 +1,30 @@
+O Nome do Vento
+Fantasia
+Patrick Rothfuss
+8599296493
+9
+10
+Entendendo Algoritmos
+Programação
+Aditya Bhargava
+8575225634
+2
+2
+Sociologia
+Sociologia
+Émile Durkheim
+1234567890
+10
+5
+Um livro sobre pandas
+panda polar
+pandomico
+pandinha
+1
+1
+um titulo
+um genero
+um autor
+um isbn
+1
+1

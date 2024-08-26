@@ -1,6 +1,10 @@
 #replit arquivos
 *.replit
 *.nix
+main
+main-debug
+logs.txt
+.breakpoints
 
 # Prerequisites
 *.d

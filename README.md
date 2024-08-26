@@ -19,8 +19,8 @@ Este projeto faz parte da avaliação da primeira unidade da disciplina **Algori
 
 1. **Clone o repositório:**
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-   cd seu-repositorio
+   git clone https://github.com/FranciscoTei/Biblioteca-Virtual.git
+   cd Biblioteca-Virtual
 
 2. **Compile o projeto utilizando make:**
    ```bash

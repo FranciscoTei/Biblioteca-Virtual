@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <time.h>
-#include "mensagens.h"
+#include "../src/mensagens.h"
 #include "../src/utils.h"
 #include "../src/color_print.h"
 

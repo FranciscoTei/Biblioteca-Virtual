@@ -1,6 +1,6 @@
 #include "../dados/database.h"
 #include "../src/color_print.h"
-#include "autenticacao.h"
+#include "../src/autenticacao.h"
 #include "../src/utils.h"
 
 void boasVindas() {

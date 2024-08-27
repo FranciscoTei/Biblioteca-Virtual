@@ -262,14 +262,14 @@ void recomendar_livros() {
             color_printf(COLOR_BLUE, "ISBN: "); color_printf(COLOR_WHITE, "%s\n", livros[i].isbn);
             color_printf(COLOR_BLUE, "Quantidade disponível: "); color_printf(COLOR_WHITE, "%d\n", livros[i].qtd_disponivel);
             color_printf(COLOR_BLUE, "Quantidade Total: "); color_printf(COLOR_WHITE, "%d\n", livros[i].qtd_total);
-            color_printf(COLOR_BLUE, "\nDeseja confirmar o empréstimo? (s/n): ");
 
 
             if (livros[i].qtd_disponivel > 0) {
-                color_printf(COLOR_GREEN, "Status: Disponível para empréstimo\n");
+                color_printf(COLOR_GREEN, "Status: Disponível para empréstimo\n\n");
             } else {
-                color_printf(COLOR_RED, "Status: Não disponível para empréstimo\n");
+                color_printf(COLOR_RED, "Status: Não disponível para empréstimo\n\n");
             }
+            color_printf(COLOR_BLUE, "\nDeseja confirmar o empréstimo? (s/n): ");
 
             encontrados++;
         }

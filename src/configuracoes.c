@@ -4,6 +4,9 @@
 #include "../dados/database.h"
 #include "../src/configuracoes.h"
 #include "../src/color_print.h"
+#include "../src/utils.h"
+#include "../src/autenticacao.h"
+        
 
 
 
@@ -95,7 +98,7 @@ void alterar_email() {
     if (!validarEmail(novo_email)) {
         limpar_tela();
         color_printf(COLOR_YELLOW, "❌ Email inválido.\n\n");
-        return 0;
+        return;
     } else {
     
         printf("\nConfirmar a alteração de email para ");

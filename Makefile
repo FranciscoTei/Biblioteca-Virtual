@@ -1,10 +1,10 @@
 all: main
 
-CC = clang
-override CFLAGS += -g -Wno-everything -pthread -lm
+CC = gcc
+override CFLAGS += -g -lm
 
-SRCS = $(shell find . -name '.ccls-cache' -type d -prune -o -type f -name '*.c' -print)
-HEADERS = $(shell find . -name '.ccls-cache' -type d -prune -o -type f -name '*.h' -print)
+SRCS = $(wildcard *.c) $(wildcard src/*.c) $(wildcard src/**/*.c)
+HEADERS = $(wildcard *.h) $(wildcard include/*.h) $(wildcard include/**/*.h)
 
 main: $(SRCS) $(HEADERS)
 	$(CC) $(CFLAGS) $(SRCS) -o "$@"

@@ -11,7 +11,7 @@
 
 
 
-int menu_inicial_bibliotecario() {
+void menu_inicial_bibliotecario() {
   int opcao;
 
   do {
@@ -400,62 +400,5 @@ void salvar_historico(const char *acao, const char *isbn, const char *titulo) {
             break;
         }
     }
-}
-
-void ver_historico() {
-    int total_acoes = 0;
-    int pagina = 0;
-    char opcao;
-
-    for (int i = 0; i < MAX_HISTORICO; i++) {
-        if (historico[i].acao[0] != '\0') {
-            total_acoes++;
-        } else {
-            break;
-        }
-    }
-
-    if (total_acoes == 0) {
-        limpar_tela();
-        color_printf(COLOR_YELLOW, "Nenhuma ação registrada no histórico.\n\n");
-        return;
-    }
-
-    do {
-        int inicio = pagina * 10;
-        int fim = inicio + 10;
-
-        if (fim > total_acoes) {
-            fim = total_acoes;
-        }
-
-        printf("Página %d/%d\n", pagina + 1, (total_acoes + 9) / 10);
-
-        for (int i = inicio; i < fim; i++) {
-            color_printf(COLOR_BLUE, "%d. %s\n", i + 1, historico[i].detalhes);
-        }
-
-        printf("\nNavegação: (a) Anterior | (d) Próxima | (q) Sair\n");
-        printf("Escolha uma opção: ");
-        color_printf(COLOR_WHITE, "");
-        scanf(" %c", &opcao);
-
-        if (opcao == 'a' || opcao == 'A') {
-            if (pagina > 0) {
-                pagina--;
-            } else {
-                printf("Você já está na primeira página.\n");
-            }
-        } else if (opcao == 'd' || opcao == 'D') {
-            if (fim < total_acoes) {
-                pagina++;
-            } else {
-                printf("Você já está na última página.\n");
-            }
-        } else if (opcao != 'q' && opcao != 'Q') {
-            printf("Opção inválida.\n");
-        }
-
-    } while (opcao != 'q' && opcao != 'Q');
 }
 

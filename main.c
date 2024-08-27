@@ -1,10 +1,11 @@
 #include "src/utils.h"
 #include "src/autenticacao.h"
+#include "src/mensagens.h"
+#include "src/bibliotecario.h"
 #include "src/usuario.h"
 #include "src/color_print.h"
 #include "dados/database.h"
 #include <stdio.h>
-#include <termios.h>
 #include <unistd.h>
 
 int main() {
